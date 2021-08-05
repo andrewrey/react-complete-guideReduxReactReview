@@ -1,4 +1,4 @@
-import redux from "redux";
+import { createStore } from "redux";
 
 const countReducer = (state = { count: 0 }, action) => {
   switch (action.type) {
@@ -11,6 +11,6 @@ const countReducer = (state = { count: 0 }, action) => {
   }
 };
 
-const store = redux.createStore(countReducer);
+const store = createStore(countReducer);
 
 export default store;
