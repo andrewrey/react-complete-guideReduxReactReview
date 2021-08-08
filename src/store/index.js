@@ -6,6 +6,8 @@ const countReducer = (state = { count: 0 }, action) => {
       return { count: state.count + 1 };
     case "decrement":
       return { count: state.count - 1 };
+    case "increase":
+      return { count: state.count + action.payload };
     default:
       return state;
   }
