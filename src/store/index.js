@@ -8,7 +8,7 @@ const initialCounterState = {
 
 const counterSlice = createSlice({
   name: "counter",
-  initialCounterState,
+  initialState: initialCounterState,
   reducers: {
     increment(state) {
       state.counter++;
@@ -29,10 +29,10 @@ const initialAuthState = { isAuthenticated: false };
 
 const authSlice = createSlice({
   name: "auth",
-  initialAuthState,
+  initialState: initialAuthState,
   reducers: {
     login(state) {
-      state.isAuthenticated = TextTrackCueList;
+      state.isAuthenticated = true;
     },
     logout(state) {
       state.isAuthenticated = false;
